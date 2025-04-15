@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Ghibli Grub</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <script src="cursor.js" defer></script>
+  <script src="cart.js" defer></script>
+</head>
+<body>
+  <header class="glass">
+    <nav>
+      <a href="index.html" class="logo-link">
+        <span class="text-logo">Ghibli Grub</span>
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="cart.html" class="cart-link">
+            Cart <span id="cart-count" class="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="menu">
+    <h2 class="fancy">Our Magical Menu 🍜</h2>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <div class="menu-img">
+          <span class="food-icon">🔥</span>
+        </div>
+        <h3>Calcifer's Fire-Roasted Skewers</h3>
+        <p>Spicy grilled veggies & meat.</p>
+        <span class="price">$9.99</span>
+        <button class="add-to-cart-btn" onclick="addToCart('Calcifer\'s Fire-Roasted Skewers', 9.99)">Add to Cart</button>
+      </div>
+      <div class="menu-card">
+        <div class="menu-img">
+          <span class="food-icon">🖤</span>
+        </div>
+        <h3>Soot Sprite Puffs</h3>
+        <p>Crispy rice balls with a touch of magic.</p>
+        <span class="price">$6.99</span>
+        <button class="add-to-cart-btn" onclick="addToCart('Soot Sprite Puffs', 6.99)">Add to Cart</button>
+      </div>
+      <div class="menu-card">
+        <div class="menu-img">
+          <span class="food-icon">🍜</span>
+        </div>
+        <h3>Ponyo's Perfect Ramen</h3>
+        <p>Rich broth, noodles, egg, and ham.</p>
+        <span class="price">$12.99</span>
+        <button class="add-to-cart-btn" onclick="addToCart('Ponyo\'s Perfect Ramen', 12.99)">Add to Cart</button>
+      </div>
+      <div class="menu-card">
+        <div class="menu-img">
+          <span class="food-icon">🌿</span>
+        </div>
+        <h3>Totoro's Forest Feast</h3>
+        <p>Seasonal veggies with rice & miso soup.</p>
+        <span class="price">$11.99</span>
+        <button class="add-to-cart-btn" onclick="addToCart('Totoro\'s Forest Feast', 11.99)">Add to Cart</button>
+      </div>
+      <div class="menu-card">
+        <div class="menu-img">
+          <span class="food-icon">🍰</span>
+        </div>
+        <h3>Spirited Spongecake</h3>
+        <p>Fluffy vanilla sponge with berry cream.</p>
+        <span class="price">$5.99</span>
+        <button class="add-to-cart-btn" onclick="addToCart('Spirited Spongecake', 5.99)">Add to Cart</button>
+      </div>
+      <div class="menu-card">
+        <div class="menu-img">
+          <span class="food-icon">🍵</span>
+        </div>
+        <h3>Witch's Brew Tea</h3>
+        <p>Herbal blend with a hint of honey.</p>
+        <span class="price">$3.99</span>
+        <button class="add-to-cart-btn" onclick="addToCart('Witch\'s Brew Tea', 3.99)">Add to Cart</button>
+      </div>
+      <div class="menu-card">
+        <div class="menu-img">
+          <span class="food-icon">🥗</span>
+        </div>
+        <h3>Kodama Forest Salad</h3>
+        <p>Fresh greens with seasonal fruits and nuts.</p>
+        <span class="price">$8.99</span>
+        <button class="add-to-cart-btn" onclick="addToCart('Kodama Forest Salad', 8.99)">Add to Cart</button>
+      </div>
+      <div class="menu-card">
+        <div class="menu-img">
+          <span class="food-icon">🍳</span>
+        </div>
+        <h3>Howl's Moving Breakfast</h3>
+        <p>Eggs, bacon, toast, and magical beans.</p>
+        <span class="price">$10.99</span>
+        <button class="add-to-cart-btn" onclick="addToCart('Howl\'s Moving Breakfast', 10.99)">Add to Cart</button>
+      </div>
+      <div class="menu-card">
+        <div class="menu-img">
+          <span class="food-icon">🍱</span>
+        </div>
+        <h3>No-Face's Appetite Bento</h3>
+        <p>A generous box with a bit of everything.</p>
+        <span class="price">$14.99</span>
+        <button class="add-to-cart-btn" onclick="addToCart('No-Face\'s Appetite Bento', 14.99)">Add to Cart</button>
+      </div>
+      <div class="menu-card">
+        <div class="menu-img">
+          <span class="food-icon">🍢</span>
+        </div>
+        <h3>Haku's Dragon Dango</h3>
+        <p>Sweet rice dumplings in three magical colors.</p>
+        <span class="price">$7.99</span>
+        <button class="add-to-cart-btn" onclick="addToCart('Haku\'s Dragon Dango', 7.99)">Add to Cart</button>
+      </div>
+      <div class="menu-card">
+        <div class="menu-img">
+          <span class="food-icon">🍦</span>
+        </div>
+        <h3>Kiki's Delivery Ice Cream</h3>
+        <p>Vanilla bean ice cream with fresh berries.</p>
+        <span class="price">$6.49</span>
+        <button class="add-to-cart-btn" onclick="addToCart('Kiki\'s Delivery Ice Cream', 6.49)">Add to Cart</button>
+      </div>
+      <div class="menu-card">
+        <div class="menu-img">
+          <span class="food-icon">🥪</span>
+        </div>
+        <h3>Castle in the Sky Sandwich</h3>
+        <p>Layered with fresh vegetables and special sauce.</p>
+        <span class="price">$8.49</span>
+        <button class="add-to-cart-btn" onclick="addToCart('Castle in the Sky Sandwich', 8.49)">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Visit Us</h4>
+        <p>123 Spirited Avenue<br>Totoro District<br>Open: 11am - 10pm</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <div class="social-icons">
+          <a href="#" class="social-icon">📱</a>
+          <a href="#" class="social-icon">📷</a>
+          <a href="#" class="social-icon">📧</a>
+        </div>
+        <div class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Email address">
+          <button class="newsletter-btn">Join</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>© 2025 Ghibli Grub. Not affiliated with Studio Ghibli. Made with love 🧡</p>
+    </div>
+  </footer>
+</body>
+</html>
